@@ -13,6 +13,8 @@
 		D35154DC2A8019D200FE5B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35154DA2A8019D200FE5B75 /* Main.storyboard */; };
 		D35154DE2A8019D400FE5B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35154DD2A8019D400FE5B75 /* Assets.xcassets */; };
 		D35154E12A8019D400FE5B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35154DF2A8019D400FE5B75 /* LaunchScreen.storyboard */; };
+		D35154EA2A8072E000FE5B75 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D35154E92A8072E000FE5B75 /* Toast */; };
+		D35154EC2A80745100FE5B75 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35154EB2A80745100FE5B75 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		D35154DD2A8019D400FE5B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D35154E02A8019D400FE5B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35154E22A8019D400FE5B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35154EB2A80745100FE5B75 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35154EA2A8072E000FE5B75 /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				D35154D42A8019D200FE5B75 /* AppDelegate.swift */,
 				D35154D62A8019D200FE5B75 /* SceneDelegate.swift */,
 				D35154D82A8019D200FE5B75 /* ViewController.swift */,
+				D35154EB2A80745100FE5B75 /* Toast.swift */,
 				D35154DA2A8019D200FE5B75 /* Main.storyboard */,
 				D35154DD2A8019D400FE5B75 /* Assets.xcassets */,
 				D35154DF2A8019D400FE5B75 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "IOS Build";
+			packageProductDependencies = (
+				D35154E92A8072E000FE5B75 /* Toast */,
+			);
 			productName = "IOS Build";
 			productReference = D35154D12A8019D200FE5B75 /* IOS Build.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = D35154C82A8019D200FE5B75;
+			packageReferences = (
+				D35154E82A8072E000FE5B75 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = D35154D22A8019D200FE5B75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D35154D92A8019D200FE5B75 /* ViewController.swift in Sources */,
+				D35154EC2A80745100FE5B75 /* Toast.swift in Sources */,
 				D35154D52A8019D200FE5B75 /* AppDelegate.swift in Sources */,
 				D35154D72A8019D200FE5B75 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D35154E82A8072E000FE5B75 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D35154E92A8072E000FE5B75 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D35154E82A8072E000FE5B75 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D35154C92A8019D200FE5B75 /* Project object */;
 }
