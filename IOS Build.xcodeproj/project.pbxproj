@@ -3,21 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10553AD687BF23D45443DF05 /* Pods_IOS_Build.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F0811944DB9FCEEEC3B7DA /* Pods_IOS_Build.framework */; };
 		D35154D52A8019D200FE5B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35154D42A8019D200FE5B75 /* AppDelegate.swift */; };
 		D35154D72A8019D200FE5B75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35154D62A8019D200FE5B75 /* SceneDelegate.swift */; };
 		D35154D92A8019D200FE5B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35154D82A8019D200FE5B75 /* ViewController.swift */; };
 		D35154DC2A8019D200FE5B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35154DA2A8019D200FE5B75 /* Main.storyboard */; };
 		D35154DE2A8019D400FE5B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35154DD2A8019D400FE5B75 /* Assets.xcassets */; };
 		D35154E12A8019D400FE5B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35154DF2A8019D400FE5B75 /* LaunchScreen.storyboard */; };
-		D35154EA2A8072E000FE5B75 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D35154E92A8072E000FE5B75 /* Toast */; };
-		D35154EC2A80745100FE5B75 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35154EB2A80745100FE5B75 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CF6D3C44023030A4F64C671 /* Pods-IOS Build.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Build.debug.xcconfig"; path = "Target Support Files/Pods-IOS Build/Pods-IOS Build.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4DD95661784E6A5BD916C2 /* Pods-IOS Build.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Build.release.xcconfig"; path = "Target Support Files/Pods-IOS Build/Pods-IOS Build.release.xcconfig"; sourceTree = "<group>"; };
+		77F0811944DB9FCEEEC3B7DA /* Pods_IOS_Build.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Build.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35154D12A8019D200FE5B75 /* IOS Build.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Build.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35154D42A8019D200FE5B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D35154D62A8019D200FE5B75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +28,6 @@
 		D35154DD2A8019D400FE5B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D35154E02A8019D400FE5B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35154E22A8019D400FE5B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D35154EB2A80745100FE5B75 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D35154EA2A8072E000FE5B75 /* Toast in Frameworks */,
+				10553AD687BF23D45443DF05 /* Pods_IOS_Build.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB4F2937DACED2AE60F14C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77F0811944DB9FCEEEC3B7DA /* Pods_IOS_Build.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AB2A17FA442521581C5820A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CF6D3C44023030A4F64C671 /* Pods-IOS Build.debug.xcconfig */,
+				6D4DD95661784E6A5BD916C2 /* Pods-IOS Build.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D35154C82A8019D200FE5B75 = {
 			isa = PBXGroup;
 			children = (
 				D35154D32A8019D200FE5B75 /* IOS Build */,
 				D35154D22A8019D200FE5B75 /* Products */,
+				5AB2A17FA442521581C5820A /* Pods */,
+				0CB4F2937DACED2AE60F14C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +83,6 @@
 				D35154D42A8019D200FE5B75 /* AppDelegate.swift */,
 				D35154D62A8019D200FE5B75 /* SceneDelegate.swift */,
 				D35154D82A8019D200FE5B75 /* ViewController.swift */,
-				D35154EB2A80745100FE5B75 /* Toast.swift */,
 				D35154DA2A8019D200FE5B75 /* Main.storyboard */,
 				D35154DD2A8019D400FE5B75 /* Assets.xcassets */,
 				D35154DF2A8019D400FE5B75 /* LaunchScreen.storyboard */,
@@ -79,18 +98,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D35154E52A8019D400FE5B75 /* Build configuration list for PBXNativeTarget "IOS Build" */;
 			buildPhases = (
+				7CA6DE01E95049CFDE1B3506 /* [CP] Check Pods Manifest.lock */,
 				D35154CD2A8019D200FE5B75 /* Sources */,
 				D35154CE2A8019D200FE5B75 /* Frameworks */,
 				D35154CF2A8019D200FE5B75 /* Resources */,
+				C4FF0EF0998C9E106BA3678E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "IOS Build";
-			packageProductDependencies = (
-				D35154E92A8072E000FE5B75 /* Toast */,
-			);
 			productName = "IOS Build";
 			productReference = D35154D12A8019D200FE5B75 /* IOS Build.app */;
 			productType = "com.apple.product-type.application";
@@ -111,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = D35154CC2A8019D200FE5B75 /* Build configuration list for PBXProject "IOS Build" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -119,9 +137,6 @@
 				Base,
 			);
 			mainGroup = D35154C82A8019D200FE5B75;
-			packageReferences = (
-				D35154E82A8072E000FE5B75 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-			);
 			productRefGroup = D35154D22A8019D200FE5B75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,13 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CA6DE01E95049CFDE1B3506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS Build-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FF0EF0998C9E106BA3678E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Build/Pods-IOS Build-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Build/Pods-IOS Build-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS Build/Pods-IOS Build-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D35154CD2A8019D200FE5B75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D35154D92A8019D200FE5B75 /* ViewController.swift in Sources */,
-				D35154EC2A80745100FE5B75 /* Toast.swift in Sources */,
 				D35154D52A8019D200FE5B75 /* AppDelegate.swift in Sources */,
 				D35154D72A8019D200FE5B75 /* SceneDelegate.swift in Sources */,
 			);
@@ -228,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,6 +350,7 @@
 		};
 		D35154E62A8019D400FE5B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF6D3C44023030A4F64C671 /* Pods-IOS Build.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +380,7 @@
 		};
 		D35154E72A8019D400FE5B75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4DD95661784E6A5BD916C2 /* Pods-IOS Build.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,25 +430,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D35154E82A8072E000FE5B75 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scalessec/Toast-Swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D35154E92A8072E000FE5B75 /* Toast */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D35154E82A8072E000FE5B75 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
-			productName = Toast;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D35154C92A8019D200FE5B75 /* Project object */;
 }

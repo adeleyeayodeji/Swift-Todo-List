@@ -99,6 +99,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 UserDefaults.standard.set(self.items, forKey: "items")
                 //reload table at row
                 self.table.reloadRows(at: [indexPath], with: .automatic)
+                //show alert
+                
             }
         }
         alertController.addAction(updateAction)
